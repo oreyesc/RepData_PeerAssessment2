@@ -1,0 +1,67 @@
+---
+title: "README"
+author: "Oscar Reyes"
+date: "April 10, 2015"
+output: html_document
+---
+***
+
+
+#Introduction
+Storms and other severe weather events can cause both public health and economic problems for communities and municipalities. Many severe events can result in fatalities, injuries, and property damage, and preventing such outcomes to the extent possible is a key concern.
+
+This project involves exploring the U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database. This database tracks characteristics of major storms and weather events in the United States, including when and where they occur, as well as estimates of any fatalities, injuries, and property damage.      
+
+***
+
+#Synopsis   
+This document presents an analysis of the [U.S. National Oceanic and Atmospheric Administration's (NOAA) storm database (1950-2011)]:[47K].  The analysis shows that <code class = "data">Tornados</code>, followed by <code class = "data">Heat</code> and <code class = "data">Wind</code> are the weather event that most impact the population health. And as part of the economic analysis the weather events that most impact the economy in <code class = "data">properties</code> and <code class = "data">crop</code> damages are <code class = "data">Hail</code>, followed by <code class = "data">Floodings</code>, <code class = "data">Storms</code> and <code class = "data">Tornados</code>.      
+The events in the database start in the year 1950 and end in November 2011. In the earlier years of the database there are generally fewer events recorded, most likely due to a lack of good records. More recent years should be considered more complete.     
+
+***
+
+#Data Processing    
+Description and justification about:    
+
+- How the data were loaded into R and processed for analysis.    
+- Any data transformation.  
+
+## Unifying event types
+
+
+| Proposed  Event Table      | Actual Storm Data Event Table - NWS Directive 10-1605      |
+| :-----                     | :------                                                    |
+|  Avalanche                 | Avalanche, Debris Flow.                                    |
+|  Cold                      | Cold, Extreme Cold.                                        |
+|  Drought                   | Drought.                                                   |
+|  Dust Storm                | Dust Devil, Dust Storm, DustStorm.                         |
+|  Flood                     | Coastal Flood, CoastalFlood, Fast Flood, Flood,            |
+|                            | Lakeshore Flood, River Flood.                              |
+|  Fog Smoke                 | Dense Fog, Dense Smoke, Fog, Freezing Fog, Smoke.          |
+|  Hail                      | Hail.                                                      |
+|  Heat                      | Excessive, Excessive Heat, Heat.                           |
+|  Hurricaine                | Hurricaine, Typhoon.                                       |
+|  Fire                      | Fire, Forest Fire, Wild Fire.                              |
+|  Freeze Snow               | Freeze, Frost, Frost/Freeze, Heavy Snow, Lake Effect Snow, |
+|                            | Lake-Effect Snow, Sleet, Snow.                             |
+|  Lightning                 | Lightning.                                                 |
+|  Marine Thunderstorm Wind  | Marine Hail, Marine High Wind, Marine Strong Wind,         |
+|                            | Marine Thunderstorm Wind, Thunderstorm Wind.               |
+|                            | Tropical Depression, Volcanis Ash, Wild Fire, Seiche,      |
+|                            | High Surf, Astronimical Low Tide.                          | 
+|  Other                     | Contains all other type of event.                          |
+|  Rain                      | Heavy Rain, Rain.                                          |
+|  Rip Current               | Rip Current.                                               |
+|  Storm                     | Coastal Storm, CoastalStorm, Dust Storm, DustStorm, Ice,   |
+|                            | Ice Storm, Storm Surge, Storm Surge/Tide, Storm Tide,      |
+|                            | Thunderstorm, Tropical storm, Winter Storm, Winter Weather.|
+|  Tsunami                   | Tsunami.                                                   |
+|  Tornado                   | Funnel, Funnel Cloud, Tornado, Waterspout.                 |
+|  Wind                      | Blizzard, High Wind, High, Strong Wind, Wind, Wind Chill.  |
+
+
+##Analysis   
+    
+    
+The result of the analysis gives evidence of which are the Most Harmful Events that affect the Population Health, as well as which are the Weather Events that have had big Economic Consequences, this analysis has been realized with information since 1950 until 2011.    
+
